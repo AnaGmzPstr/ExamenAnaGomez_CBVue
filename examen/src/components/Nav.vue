@@ -1,6 +1,5 @@
 <template>
     <nav>
-        Examen
         <ul>
             <RouterLink to="/">Home</RouterLink>
             <RouterLink to="exercici1">Exercici 1: Llista de productes</RouterLink>

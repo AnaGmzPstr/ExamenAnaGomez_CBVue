@@ -1,5 +1,5 @@
 <template>
-<p>Contador padre: {{ contador }}</p>
+<p>Contador: {{ contador }}</p>
 <Contador/>
 </template>
 

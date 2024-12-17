@@ -13,6 +13,12 @@ const router = createRouter({
       path: '/exercici1',
       name: 'exercici1',
       component: () => import('../views/Exercici1View.vue'),
+      children:[{
+        path:'/productDetail/:producteId',
+        name:'productDetail',
+        component: () => import('../views/ProductDetailsView.vue'),
+        props: route =>({...route.params, id: route.params.producteId})
+      },]
     }, 
     {
       path: '/exercici2',
@@ -20,10 +26,11 @@ const router = createRouter({
       component: () => import('../views/Exercici2View.vue'),
     },
     {
-      path: '/exercici3',
+      path: '/exercici3/',
       name: 'exercici3',
       component: () => import('../views/Exercici3View.vue'),
     },
+    
   ],
 })
 
